@@ -1,9 +1,94 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: auto;
     box-sizing: border-box;
 }
+
+:root {
+    --primary-text-color: #95b2b8; /* Cadet Gray */
+    --secondary-text-color: #307351; /* Dark Spring Green */
+    --third-text-color: #CCF8D4; /* Tea Green */
+
+    --background-color: #2e0f15; /* Black Bean */
+    --nav-bar-background: #120309; /* Licorice */
+    --hover-color: #70163c; /* Tyrian Purple */
+}
+
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #efefef;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    margin: 5%
+}
+
+/*Common Options */
+
+.headline {
+    color: var(--primary-text-color);
+    margin: 2%;
+}
+
+.special {
+    font-weight: 650;
+    
+}
+
+#reasons {
+    list-style: inside circle;
+    color: var(--secondary-text-color);
+}
+
+p, figcaption {
+    color: var(--secondary-text-color);
+}
+
+/* Gallery Options*/
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    margin: 5%
+}
+
+figure {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact Options */
+
+#contactform {
+    margin: 5%
+}
+
+label {
+    margin: 2%;
+}
+
+.border-of-label {
+    border: 2px solid black;
+    width: 50%;
+    margin: 0;
+}
+
+button {
+    background-color: var(--third-text-color);
+    height: 35px;
+    width: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
